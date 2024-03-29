@@ -1,0 +1,20 @@
+Titulo do Topico
+As regras
+Protocolos
+Conjuntos de protocolos
+Empresas de padroes
+Modelos de referéncia
+Encapsulamento de dados
+Acesso a dados
+Objetivo do Tépico
+Descrever os tipos de regras necessarias para obter éxito comunicar.
+Explicar a necessidade dos protocolos na comunicagio de rede.
+Explicar a finalidade da adesio a um conjunto de protocolos.
+Explicar o papel das organizagbes de padrbes no estabelecimento de
+protocolos para interoperabilidade de rede.
+Expligue como o modelo TCP / IP e o modelo OS5l s3o usados para facilitar
+padronizagio no processo de comunicagio.
+Explicar como o encapsulamento permite que os dados sejam transportados
+pela rede. remota.
+Explicar como os hosts locais acessam recursos locais em uma rede.,
+ 
