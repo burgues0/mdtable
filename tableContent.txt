@@ -1,16 +1,24 @@
-Titulo do Topico
-As regras
-Protocolos
-Conjuntos de protocolos
-Empresas de padroes
-Modelos de referéncia
-Encapsulamento de dados
-Acesso a dados
-Objetivo do Tépico
-Descrever os tipos de regras necessarias para obter éxito comunicar.
-Explicar a necessidade dos protocolos na comunicagio de rede.
-Explicar a finalidade da adesio a um conjunto de protocolos.
-Explicar o papel das organizagbes de padrbes no estabelecimento de protocolos para interoperabilidade de rede.
-Expligue como o modelo TCP / IP e o modelo OS5l s3o usados para facilitar padronizagio no processo de comunicagio.
-Explicar como o encapsulamento permite que os dados sejam transportados pela rede. remota.
-Explicar como os hosts locais acessam recursos locais em uma rede.,
+Tipo de nuvem
+MNuvens publicas
+MNuvens hibridas comunitarias
+D .
+Aplicativos e servigos baseados em nuvem oferecidos em uma nuvem publica so cnadns dnporwel paraa poi:l.lal;:ao em geml 0s senvigos podem ser gratuitos ou
+cnadns dnporwel paraa poi:l.lal;:ao em geml 0s senvigos podem ser gratuitos ou fi &m [POr USD, COMOo pagar por
+fi &m [POr USD, COMOo pagar por armazenamento on-line. A nuvem pl.bica usa a intermet para fornecer servigos.
+Os aplicativos e servigos haseadus em nuvem oferecidos em uma nuvem privada sa0 destinado a uma ul pecifica, como um governo. A
+sa0 destinado a uma ul pecifica, como um governo. A nuvem privada pode wrc:unflg.rada usando o rede, embora isso possa ser caro
+nuvem privada pode wrc:unflg.rada usando o rede, embora isso possa ser caro para construir e manter. Uma nuvem privada também pode ser gerenciada por
+para construir e manter. Uma nuvem privada também pode ser gerenciada por uma organizagao externa com acesso estrito seguranca.
+Uma hibrrida & posta de duas ou mais nuvens (exemplo: parte privada, parte publica), onde cada parte permanece um objeto distinto, mas ambos sio
+parte publica), onde cada parte permanece um objeto distinto, mas ambos sio conectado usando uma dnica arguitetura. Individuos em uma nuvem hibrida seria
+conectado usando uma dnica arguitetura. Individuos em uma nuvem hibrida seria capaz de ter graus de acesso a varios servicos com base em dirgitos de acesso
+capaz de ter graus de acesso a varios servicos com base em dirgitos de acesso do usuario.
+Uma nuvem de comunidade € criada para uso exclusivo por entidades ou organizagdes especificas. As diferengas entre nuvens publicas e nuvens da
+organizagdes especificas. As diferengas entre nuvens publicas e nuvens da comunidade sio as necessidades funcionais que foram personalizadas para a
+comunidade sio as necessidades funcionais que foram personalizadas para a comunidade. Por exemplo, organizagdes de saide devem manter a conformidade
+comunidade. Por exemplo, organizagdes de saide devem manter a conformidade com politicas & leis (por exemplo, HIPAA) que exigem confidencialidade &
+com politicas & leis (por exemplo, HIPAA) que exigem confidencialidade & autenticagdo especial. As nuvens comunitarias sao usadm por varias
+autenticagdo especial. As nuvens comunitarias sao usadm por varias organizagdes que t&m As nuvens
+organizagdes que t&m As nuvens comunitdrias sdo semelhantes a um ambiente de nuvem publica, mas com niveis
+comunitdrias sdo semelhantes a um ambiente de nuvem publica, mas com niveis definidos de seguranga, privacidade e até mesmo conformidade normativa de
+definidos de seguranga, privacidade e até mesmo conformidade normativa de uma nuvem privada.
