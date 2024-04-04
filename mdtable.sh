@@ -7,8 +7,13 @@ PREFIX='frag'   #temporary files prefix to concatenate later
 TABLE="mdtable.md"  #create md file
 > "$TABLE"          #clear it
 
+if [[ $1 == "-h" ]]; then
+    echo "Start of help page :D"
+    exit 1
+fi
+
 if [[ ! -f "$FILE" ]]; then
-    echo "The file $FILE does not exist. Please check for any spelling errors."
+    echo "The file $FILE does not exist. Please check for any spelling errors, or use ./mdtable.sh -h for help."
     exit 1
 fi
 
