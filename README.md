@@ -7,7 +7,7 @@ Quick script to format text into a markdown table.
 
 ## Example
 
-> file.txt
+### File.txt
 
 ```txt
 Title 1
@@ -22,11 +22,13 @@ Content g
 Content h
 ```
 
+### Command
+
 ```bash
-./mdtable.sh file.txt 2
+> ./mdtable.sh file.txt 2
 ```
 
-> table output
+### Table output
 
 | Title 1 | Title 2 |
 |:---:|:---:|
