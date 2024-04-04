@@ -3,7 +3,9 @@ Quick script to format text into a markdown table.
 
 # Usage
 
-./mdtable.sh \[file\] \[column_count\]
+```bash
+./mdtable.sh [file] [column_count]
+```
 
 ## Example
 
