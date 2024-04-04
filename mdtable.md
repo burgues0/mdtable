@@ -1,13 +1,5 @@
-| Tipo de nuvem | parte publica), onde cada parte permanece um objeto distinto, mas ambos sio conectado usando uma dnica arguitetura. Individuos em uma nuvem hibrida seria |
-|:---:|:---:|
-| MNuvens publicas | conectado usando uma dnica arguitetura. Individuos em uma nuvem hibrida seria capaz de ter graus de acesso a varios servicos com base em dirgitos de acesso |
-| MNuvens hibridas comunitarias | capaz de ter graus de acesso a varios servicos com base em dirgitos de acesso do usuario. |
-| D . | Uma nuvem de comunidade € criada para uso exclusivo por entidades ou organizagdes especificas. As diferengas entre nuvens publicas e nuvens da |
-| Aplicativos e servigos baseados em nuvem oferecidos em uma nuvem publica so cnadns dnporwel paraa poi:l.lal;:ao em geml 0s senvigos podem ser gratuitos ou | organizagdes especificas. As diferengas entre nuvens publicas e nuvens da comunidade sio as necessidades funcionais que foram personalizadas para a |
-| cnadns dnporwel paraa poi:l.lal;:ao em geml 0s senvigos podem ser gratuitos ou fi &m [POr USD, COMOo pagar por | comunidade sio as necessidades funcionais que foram personalizadas para a comunidade. Por exemplo, organizagdes de saide devem manter a conformidade |
-| fi &m [POr USD, COMOo pagar por armazenamento on-line. A nuvem pl.bica usa a intermet para fornecer servigos. | comunidade. Por exemplo, organizagdes de saide devem manter a conformidade com politicas & leis (por exemplo, HIPAA) que exigem confidencialidade & |
-| Os aplicativos e servigos haseadus em nuvem oferecidos em uma nuvem privada sa0 destinado a uma ul pecifica, como um governo. A | com politicas & leis (por exemplo, HIPAA) que exigem confidencialidade & autenticagdo especial. As nuvens comunitarias sao usadm por varias |
-| sa0 destinado a uma ul pecifica, como um governo. A nuvem privada pode wrc:unflg.rada usando o rede, embora isso possa ser caro | autenticagdo especial. As nuvens comunitarias sao usadm por varias organizagdes que t&m As nuvens |
-| nuvem privada pode wrc:unflg.rada usando o rede, embora isso possa ser caro para construir e manter. Uma nuvem privada também pode ser gerenciada por | organizagdes que t&m As nuvens comunitdrias sdo semelhantes a um ambiente de nuvem publica, mas com niveis |
-| para construir e manter. Uma nuvem privada também pode ser gerenciada por uma organizagao externa com acesso estrito seguranca. | comunitdrias sdo semelhantes a um ambiente de nuvem publica, mas com niveis definidos de seguranga, privacidade e até mesmo conformidade normativa de |
-| Uma hibrrida & posta de duas ou mais nuvens (exemplo: parte privada, parte publica), onde cada parte permanece um objeto distinto, mas ambos sio | definidos de seguranga, privacidade e até mesmo conformidade normativa de uma nuvem privada. |
+Title 1 Title 2 Title 3
+Content a Content e Content i
+Content b Content f Content j
+Content c Content g Content k
+Content d Content h Content l

@@ -1,15 +1,36 @@
 # mdtable
-CLI program that transforms tables in images into Markdown formatted tables
+Quick script to format text into a markdown table.
 
 # Usage
 
-- check if file has exec permissions
+./mdtable.sh \[file\] \[column_count\]
 
-```bash
-mdtable.py [args] <options>
+## Example
+
+> file.txt
+
+```txt
+Title 1
+Content a
+Content b
+Content c
+Content d
+Title 2
+Content e
+Content f
+Content g
+Content h
 ```
 
-# not working, need to polish the code for more use cases
-todo:
-- validate more than 2 column tables
-- algorithm to separate long texts inside table
+```bash
+./mdtable.sh file.txt 2
+```
+
+> table output
+
+| Title 1 | Title 2 |
+|:---:|:---:|
+| Content a | Content e |
+| Content b | Content f |
+| Content c | Content g |
+| Content d | Content h |
