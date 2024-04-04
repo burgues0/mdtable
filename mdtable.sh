@@ -8,12 +8,26 @@ TABLE="mdtable.md"  #create md file
 > "$TABLE"          #clear it
 
 if [[ $1 == "-h" ]]; then
-    echo "Start of help page :D"
+    echo "mdtable - Text-to-MD-Table script"
+    echo ""
+    echo "Usage: ./mdtable.sh [text-file] [column-count]"
+    echo ""
+    echo "  text-file
+        path to text that is going to be transformed"
+    echo ""
+    echo "  column-count
+        value that divides the text into <column-count> columns in the table"
+    echo ""
     exit 1
 fi
 
 if [[ ! -f "$FILE" ]]; then
     echo "The file $FILE does not exist. Please check for any spelling errors, or use ./mdtable.sh -h for help."
+    exit 1
+fi
+
+if ! file --mime-type "$FILE" | grep -q txt$; then
+    echo "The file $FILE is not a .txt file. Please convert it to the correct format."
     exit 1
 fi
 
