@@ -7,34 +7,53 @@ Quick script to format text into a markdown table.
 ./mdtable.sh [file] [column_count]
 ```
 
+# Arguments
+
+```txt
+[file]
+```
+
+Txt file with data to transform.
+
+
+```txt
+[column_count]
+```
+Integer that defines the amount of columns the table will have.
+
 ## Example
 
 ### File.txt
 
 ```txt
 Title 1
-Content a
-Content b
-Content c
-Content d
+Content A
+Content B
+Content C
+Content D
 Title 2
-Content e
-Content f
-Content g
-Content h
+Content E
+Content F
+Content G
+Content H
+Title 3
+Content I
+Content J
+Content K
+Content L
 ```
 
 ### Command
 
 ```bash
-> ./mdtable.sh file.txt 2
+> ./mdtable.sh file.txt 3
 ```
 
 ### Table output
 
-| Title 1 | Title 2 |
-|:---:|:---:|
-| Content a | Content e |
-| Content b | Content f |
-| Content c | Content g |
-| Content d | Content h |
+| Title 1 | Title 2 | Title 3 |
+| :---: | :---: | :---: |
+| Content A | Content E | Content I |
+| Content B | Content F | Content J |
+| Content C | Content G | Content K |
+| Content D | Content H | Content L |

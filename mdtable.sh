@@ -31,6 +31,11 @@ if [[ ! $(file $input_file --mime-type | grep "text/plain") ]]; then
     exit 1
 fi
 
+if [[ $2 -le 0 ]]; then
+    echo "The column amount must be higher than 0."
+    exit 1
+fi
+
 line_count=$(wc -l $1 | cut -d ' ' -f1)
 line_count=$(((line_count + 1) / column_count))
 
