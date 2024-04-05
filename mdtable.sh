@@ -1,11 +1,11 @@
 #!/bin/bash
 
-FILE=$1         #file passed as an argument
-COL_COUNT=$2    #column count passed as an argument
-PREFIX='frag'   #temporary files prefix to concatenate later
+FILE=$1
+COL_COUNT=$2
+PREFIX='frag'
 
-TABLE="mdtable.md"  #create md file
-> "$TABLE"          #clear it
+TABLE="mdtable.md"
+> "$TABLE"
 
 if [[ $1 == "-h" ]]; then
     echo "mdtable - Text-to-MD-Table script"
@@ -26,21 +26,21 @@ if [[ ! -f "$FILE" ]]; then
     exit 1
 fi
 
-if ! file --mime-type "$FILE" | grep -q txt$; then
+if [[ ! $(file $FILE --mime-type | grep "text/plain") ]]; then
     echo "The file $FILE is not a .txt file. Please convert it to the correct format."
     exit 1
 fi
 
-LINE_DELIM=$(wc -l $1 | cut -d ' ' -f1)         #get line count
-LINE_DELIM=$(((LINE_DELIM + 1) / COL_COUNT))    #+1 cause it returns line-1, and divide by column count to separate each column
+LINE_DELIM=$(wc -l $1 | cut -d ' ' -f1)
+LINE_DELIM=$(((LINE_DELIM + 1) / COL_COUNT))
 
-echo "Splitting columns..."
 split -l "$LINE_DELIM" "$FILE" "$PREFIX" -d -a 1
-echo "Concatenating columns..."
-paste -d " " "$PREFIX"* >> "mdtable.md"
-echo "Removing temporary files..."
-rm $PREFIX*
-echo "Done!"
-#echo $(pr $FILE -$COL_COUNT -t) > $FILE
+sed -i '2s/^/:---:\n/' "$PREFIX"*
+sed -i 's/^/| /' "$PREFIX"*
 
-#echo $(awk 'BEGIN { FS="\n"; } { print $1; }' $FILE)
+paste -d " " "$PREFIX"* >> "$TABLE"
+sed -i 's/$/ |/' "$TABLE"
+
+rm $PREFIX*
+
+echo "Done!"
