@@ -1,11 +1,11 @@
 #!/bin/bash
 
-FILE=$1
-COL_COUNT=$2
-PREFIX='frag'
+input_file=$1
+column_count=$2
+temp_prefix='frag'
 
-TABLE="mdtable.md"
-> "$TABLE"
+table_file="mdtable.md"
+> "$table_file"
 
 if [[ $1 == "-h" ]]; then
     echo "mdtable - Text-to-MD-Table script"
@@ -21,26 +21,26 @@ if [[ $1 == "-h" ]]; then
     exit 1
 fi
 
-if [[ ! -f "$FILE" ]]; then
-    echo "The file $FILE does not exist. Please check for any spelling errors, or use ./mdtable.sh -h for help."
+if [[ ! -f "$input_file" ]]; then
+    echo "The file $input_file does not exist. Please check for any spelling errors, or use ./mdtable.sh -h for help."
     exit 1
 fi
 
-if [[ ! $(file $FILE --mime-type | grep "text/plain") ]]; then
-    echo "The file $FILE is not a .txt file. Please convert it to the correct format."
+if [[ ! $(file $input_file --mime-type | grep "text/plain") ]]; then
+    echo "The file $input_file is not a .txt file. Please convert it to the correct format."
     exit 1
 fi
 
-LINE_DELIM=$(wc -l $1 | cut -d ' ' -f1)
-LINE_DELIM=$(((LINE_DELIM + 1) / COL_COUNT))
+line_count=$(wc -l $1 | cut -d ' ' -f1)
+line_count=$(((line_count + 1) / column_count))
 
-split -l "$LINE_DELIM" "$FILE" "$PREFIX" -d -a 1
-sed -i '2s/^/:---:\n/' "$PREFIX"*
-sed -i 's/^/| /' "$PREFIX"*
+split -l "$line_count" "$input_file" "$temp_prefix" -d -a 1
+sed -i '2s/^/:---:\n/' "$temp_prefix"*
+sed -i 's/^/| /' "$temp_prefix"*
 
-paste -d " " "$PREFIX"* >> "$TABLE"
-sed -i 's/$/ |/' "$TABLE"
+paste -d " " "$temp_prefix"* >> "$table_file"
+sed -i 's/$/ |/' "$table_file"
 
-rm $PREFIX*
+rm $temp_prefix*
 
 echo "Done!"
