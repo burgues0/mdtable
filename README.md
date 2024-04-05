@@ -9,14 +9,14 @@ Quick script to format text into a markdown table.
 
 # Arguments
 
-```txt
+```bash
 [file]
 ```
 
 Txt file with data to transform.
 
 
-```txt
+```bash
 [column_count]
 ```
 Integer that defines the amount of columns the table will have.
